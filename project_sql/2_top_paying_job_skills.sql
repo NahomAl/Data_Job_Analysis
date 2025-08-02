@@ -25,7 +25,7 @@ SELECT
     tp.job_title,
     tp.company_name,
     skills_dim.skills,
-    tp.anual_salary
+    TO_CHAR(tp.anual_salary, '$9,999,999') AS anual_salary
 FROM top_paying_data_jobs tp
 
 INNER JOIN skills_job_dim ON tp.job_id = skills_job_dim.job_id

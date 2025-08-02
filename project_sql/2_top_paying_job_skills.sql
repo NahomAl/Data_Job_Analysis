@@ -10,7 +10,6 @@ WITH top_paying_data_jobs AS (
     SELECT job_id,
         job_title,
         company_dim.name AS company_name,
-        job_country,
         salary_year_avg AS anual_salary
     FROM job_postings_fact
         LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
@@ -22,8 +21,11 @@ WITH top_paying_data_jobs AS (
 )
 
 SELECT 
-    tp.*,
-    skills_dim.skills
+    tp.job_id,
+    tp.job_title,
+    tp.company_name,
+    skills_dim.skills,
+    tp.anual_salary
 FROM top_paying_data_jobs tp
 
 INNER JOIN skills_job_dim ON tp.job_id = skills_job_dim.job_id

@@ -30,8 +30,6 @@ For my deep dive into the data analyst job market, I harnessed the power of seve
 
 Each query for this project aimed at investigating specific aspects of the data analyst job market. Here’s how I approached each question:
 
----
-
 ## 💰 1. What are the top-paying data-related jobs?
 
 **Goal:**  

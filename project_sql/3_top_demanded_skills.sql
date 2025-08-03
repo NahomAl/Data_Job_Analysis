@@ -36,3 +36,82 @@ SELECT
 FROM skill_demand
 ORDER BY job_count DESC
 LIMIT 10;
+
+/*
+This query retrieves the top 10 in-demand skills for data jobs, focusing on job postings that
+include various data roles. It counts the number of job postings for each skill and breaks down the demand by specific data roles such as Data Analyst, Data Scientist, and Data Engineer. 
+The results will show the skill name, total job count, and counts for each specific role.
+The output will look like this:
+[
+  {
+    "skills": "sql",
+    "job_count": "350277",
+    "data_analyst_count": "110380",
+    "data_scientist_count": "97835",
+    "data_engineer_count": "142062"
+  },
+  {
+    "skills": "python",
+    "job_count": "345666",
+    "data_analyst_count": "68409",
+    "data_scientist_count": "140012",
+    "data_engineer_count": "137245"
+  },
+  {
+    "skills": "aws",
+    "job_count": "126554",
+    "data_analyst_count": "11197",
+    "data_scientist_count": "33779",
+    "data_engineer_count": "81578"
+  },
+  {
+    "skills": "r",
+    "job_count": "124064",
+    "data_analyst_count": "36327",
+    "data_scientist_count": "72526",
+    "data_engineer_count": "15211"
+  },
+  {
+    "skills": "azure",
+    "job_count": "117502",
+    "data_analyst_count": "13221",
+    "data_scientist_count": "27227",
+    "data_engineer_count": "77054"
+  },
+  {
+    "skills": "tableau",
+    "job_count": "115560",
+    "data_analyst_count": "56569",
+    "data_scientist_count": "35472",
+    "data_engineer_count": "23519"
+  },
+  {
+    "skills": "spark",
+    "job_count": "107311",
+    "data_analyst_count": "6415",
+    "data_scientist_count": "30991",
+    "data_engineer_count": "69905"
+  },
+  {
+    "skills": "excel",
+    "job_count": "106231",
+    "data_analyst_count": "75348",
+    "data_scientist_count": "20886",
+    "data_engineer_count": "9997"
+  },
+  {
+    "skills": "power bi",
+    "job_count": "87060",
+    "data_analyst_count": "45482",
+    "data_scientist_count": "18532",
+    "data_engineer_count": "23046"
+  },
+  {
+    "skills": "java",
+    "job_count": "71278",
+    "data_analyst_count": "6015",
+    "data_scientist_count": "19449",
+    "data_engineer_count": "45814"
+  }
+]
+*/

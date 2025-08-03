@@ -34,3 +34,153 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY 
     tp.anual_salary DESC
 LIMIT 20;
+
+/*
+This query retrieves the top 20 highest-paying data-related jobs that are available remotely,
+ focusing on job postings with specified salaries. It includes the company names associated with these roles,
+ as well as the specific skills required for these positions, providing valuable insights into high-paying opportunities for Data professionals.
+The results will show the job ID, job title, company name, skills required, and annual salary formatted as a currency value.
+The output will look like this:
+[
+  {
+    "job_id": 40145,
+    "job_title": "Staff Data Scientist/Quant Researcher",
+    "company_name": "Selby Jennings",
+    "skills": "sql",
+    "anual_salary": "$   550,000"
+  },
+  {
+    "job_id": 40145,
+    "job_title": "Staff Data Scientist/Quant Researcher",
+    "company_name": "Selby Jennings",
+    "skills": "python",
+    "anual_salary": "$   550,000"
+  },
+  {
+    "job_id": 1714768,
+    "job_title": "Staff Data Scientist - Business Analytics",
+    "company_name": "Selby Jennings",
+    "skills": "sql",
+    "anual_salary": "$   525,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "sql",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "python",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "java",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "c++",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "cassandra",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "spark",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "hadoop",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 627602,
+    "job_title": "Senior Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "tableau",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "sql",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "python",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "java",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "cassandra",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "spark",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "hadoop",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 1131472,
+    "job_title": "Data Scientist",
+    "company_name": "Algo Capital Group",
+    "skills": "tableau",
+    "anual_salary": "$   375,000"
+  },
+  {
+    "job_id": 21321,
+    "job_title": "Data Engineer",
+    "company_name": "Engtal",
+    "skills": "python",
+    "anual_salary": "$   325,000"
+  },
+  {
+    "job_id": 21321,
+    "job_title": "Data Engineer",
+    "company_name": "Engtal",
+    "skills": "spark",
+    "anual_salary": "$   325,000"
+  }
+]
+*/

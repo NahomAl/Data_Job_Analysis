@@ -45,12 +45,16 @@ Identify the top 20 highest-paying data jobs that are remote, include salary inf
 
 **Sample Output:**
 
+
+
+
 | Job Title                             | Company Name           | Annual Salary |
 |--------------------------------------|------------------------|---------------|
+| Data Analyst| Mantys         | $650,000      |
 | Staff Data Scientist/Quant Researcher| Selby Jennings         | $550,000      |
 | Staff Data Scientist - Business Analytics | Selby Jennings   | $525,000      |
 | Senior Data Scientist                | Glocomms               | $475,000      |
-| Director of Analytics                | Meta                   | $336,500      |
+| Data Scientist                | Algo Capital Group                | $375,000      |
 
 
 ## 🛠️ 2. What skills are required for these top-paying jobs?

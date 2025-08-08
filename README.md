@@ -1,10 +1,6 @@
 # Introduction
 📊 Dive into 2023 data job market! Focusing on data roles, this project explores 💰 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics.
 
-🔍 **SQL queries?** Check them out here: [project_sql folder](/project_sql/)
-
-📁 **Dataset?** Available in the [csv_files folder](/csv_files/)
-
 
 # Background
 
@@ -24,7 +20,10 @@ For my deep dive into the data analyst job market, I harnessed the power of seve
 - **PostgreSQL:** The chosen database management system, ideal for handling the job posting data.
 - **Visual Studio Code:** My go-to for database management and executing SQL queries.
 - **Git & GitHub:** Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
+## 📂 SQL Queries & Dataset
 
+- 📁 [View All SQL Queries](/project_sql/)
+- 📊 [Explore Dataset CSVs](/csv_files/)
 
 # The Analysis
 
@@ -130,7 +129,4 @@ Identify skills that are both **in high demand** and **associated with high pay*
 | AWS       | 126,554   | $137,478   |
 
 
-## 📂 SQL Queries & Dataset
 
-- 📁 [View All SQL Queries](/project_sql/)
-- 📊 [Explore Dataset CSVs](/csv_files/)
